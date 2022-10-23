@@ -42,7 +42,7 @@ header ul li a {
     text-decoration: none;
     letter-spacing: .2rem;
 }
-
+/* Hover properties for header anchor links */
 header ul li a:hover {
     background-color: var(--secondary-color01);
     color:black;
@@ -128,7 +128,7 @@ section a img:hover {
     opacity: 1;
 }
 
-/*--------------- Project title overlays ---------------*/
+/* Project title overlays */
 
 a[data-p1], a[data-p234] {
     position: relative;
@@ -160,30 +160,43 @@ a[data-p234]::before {
     border-bottom: 0.1rem solid var(--primary-color01);
     font-size: 200%;
     margin: 0;
+    letter-spacing: 0.2rem;
+    padding-top: 20%;
+    margin-bottom: 10%;
 }
 
 footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: var(--primary-color01);
 }
 
 footer ul {
     word-spacing: 2rem;
+    padding-inline-start: 0%;
 }
 
 footer ul li {
     display: inline-flex;
-    color: var(--primary-color01);
-    font-size: 100%;
+    color: var(--secondary-color01);
+    font-size: 115%;
 }
 
 footer ul li a {
-    text-decoration: none;
-    color: var(--primary-color01);
+    text-decoration: underline;
+    color: var(--secondary-color01);
 }
 
 
+/* Footer anchor link hover properties */
+
+footer ul li a:hover {
+    background-color: var(--secondary-color01);
+    color: var(--primary-color01);
+    border-radius: 1vw;
+    text-decoration: none;
+}
 
 /* ----------------Media Queries---------------- */
 @media screen and (max-width: 725px) {
@@ -194,27 +207,27 @@ footer ul li a {
     header ul li a {
         font-size: 2.5vw;
     }
+    
     main {
         font-size: 2.4vw;
     }
     
     footer {
         text-align: center;
+        margin-top: 4vh;
     }
 
     footer ul li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: 80%;
+        padding-bottom: 1vh;
     }
     
     footer ul li p {
         padding: 0;
         margin: 0;
-    }
-
-    .Cinfo {
-        font-size: 150%;
     }
 }
 
@@ -252,13 +265,9 @@ footer ul li a {
         width: 40%;
     }
 
-    .Cinfo {
-        text-align: center;
-        font-size: 180%;
-    }
-
     footer ul li {
         font-size: 90%;
         text-align: center;
+        padding-bottom: 2vw;
     }
 }
