@@ -59,6 +59,7 @@ main {
 
 main h1 {
     font-size: 400%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 0%;
     margin-top: 0%;
     border-bottom: 0.1rem solid var(--primary-color01);
@@ -87,6 +88,7 @@ main p {
     margin-top: 0%;
     width: 75%;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 main p span {
@@ -138,8 +140,8 @@ a[data-p1]::before, a[data-p234]::before {
     position: absolute;
     content:attr(data-p1);
     z-index: 1;
-    background-color: var(--secondary-color01);
-    color: var(--primary-color01);
+    background-image: linear-gradient(white, var(--secondary-color01));
+    color: black;
     font-size: 2vw;
     bottom: 95%;
     font-weight: bold;
@@ -153,17 +155,6 @@ a[data-p234]::before {
 }
 
 /*---------------- Footer(Contact Information) ---------------- */
-
-.Cinfo {
-    display: flex;
-    justify-content: center;
-    border-bottom: 0.1rem solid var(--primary-color01);
-    font-size: 200%;
-    margin: 0;
-    letter-spacing: 0.2rem;
-    padding-top: 20%;
-    margin-bottom: 10%;
-}
 
 footer {
     display: flex;
@@ -199,6 +190,13 @@ footer ul li a:hover {
 }
 
 /* ----------------Media Queries---------------- */
+
+@media screen and (min-width: 1150px) {
+    body {
+        font-size:150%;
+    }
+}
+
 @media screen and (max-width: 725px) {
     header ul {
         align-items: center;
@@ -210,6 +208,10 @@ footer ul li a:hover {
     
     main {
         font-size: 2.4vw;
+    }
+
+    .project1 img {
+        width: 70%;
     }
     
     footer {
@@ -241,7 +243,7 @@ footer ul li a:hover {
     }
 
     header ul li a {
-        font-size: 4vw;
+        font-size: 8vw;
     }
 
     main {
