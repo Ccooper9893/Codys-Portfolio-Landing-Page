@@ -175,14 +175,12 @@ footer ul {
 footer ul li {
     display: inline-flex;
     color: var(--primary-color01);
-    font-size: 120%;
-    font-weight:bolder;
+    font-size: 100%;
 }
 
 footer ul li a {
     text-decoration: none;
     color: var(--primary-color01);
-    font-weight:bolder;
 }
 
 
@@ -200,6 +198,24 @@ footer ul li a {
         font-size: 2.4vw;
     }
     
+    footer {
+        text-align: center;
+    }
+
+    footer ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    footer ul li p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Cinfo {
+        font-size: 150%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -236,4 +252,13 @@ footer ul li a {
         width: 40%;
     }
 
+    .Cinfo {
+        text-align: center;
+        font-size: 180%;
+    }
+
+    footer ul li {
+        font-size: 90%;
+        text-align: center;
+    }
 }
