@@ -1,5 +1,5 @@
 
-/* Root variables */
+/* Root color variables */
 :root {
     --primary-color01: black;
     --secondary-color01: #e9edde;
@@ -17,7 +17,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* ----------------Header container---------------- */
+/* ---------------- Header container ---------------- */
 
 header {
     display: flex;
@@ -28,6 +28,7 @@ header {
 
 header ul {
     word-spacing: 4.1rem;
+    padding-inline-start: 0;
 }
 
 
@@ -45,10 +46,10 @@ header ul li a {
 header ul li a:hover {
     background-color: var(--secondary-color01);
     color:black;
-    border-radius: 10px;
+    border-radius: 0.5vw;
 }
 
-/* ----------------About Me---------------- */
+/* ---------------- About Me Information ---------------- */
 main {
     display: flex;
     justify-content: center;
@@ -105,19 +106,40 @@ main p span {
 .hori {
     width: 50%;
     border: 0.25vw solid var(--primary-color01);
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     opacity: 0.8;
 }
-a[data-descr] {
+
+.project234 a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.lightbulb {
+    width: 23%;
+    margin-bottom: 4%;
+    border: 0.25vw solid var(--primary-color01);
+    opacity: 0.5;
+}
+
+section a img:hover {
+    opacity: 1;
+}
+
+/*--------------- Project title overlays ---------------*/
+
+a[data-p1], a[data-p234] {
     position: relative;
 }
 
-a[data-descr]::before {
+a[data-p1]::before, a[data-p234]::before {
     position: absolute;
-    content:attr(data-descr);
+    content:attr(data-p1);
     z-index: 1;
-    background-color: white;
-    color: var(--primary-color01);
+    background-color: var(--primary-color01);
+    color: var(--secondary-color01);
     font-size: 2vw;
     bottom: 95%;
     font-weight: bold;
@@ -125,22 +147,11 @@ a[data-descr]::before {
     border: 0.25vw solid var(--primary-color01);
 }
 
-.project23 a {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+a[data-p234]::before {
+    content: attr(data-p234);
+    padding: 0.1vw 5vw 0.1vw 5vw;
 }
 
-.lightbulb {
-    width: 23%;
-    margin: 2%;
-    border: 0.25vw solid var(--primary-color01);
-    opacity: 0.8;
-}
-
-section a img:hover {
-    opacity: 1;
-}
 /* ----------------Media Queries---------------- */
 @media screen and (max-width: 725px) {
     header ul {
@@ -158,7 +169,7 @@ section a img:hover {
 
 @media screen and (max-width: 425px) {
     main {
-        font-size: 1.5vw;
+        font-size: 3vw;
         text-align: center;
     }
 
@@ -166,6 +177,7 @@ section a img:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         gap: 1vw;
     
     }
