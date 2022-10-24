@@ -58,4 +58,5 @@ A portfolio webpage that showcases my skills as a Full Stack web developer.
     - GIMP (GNU Image Manipulation Program): https://www.gimp.org/ "Used to edit profile picture of myself"
     - Toptal: Background pattern image
     - Visual Studio Code: https://code.visualstudio.com/
+    - Paint: Used to make wireframe
 
