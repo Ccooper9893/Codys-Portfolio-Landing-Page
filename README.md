@@ -46,6 +46,8 @@ A portfolio webpage that showcases my skills as a Full Stack web developer.
 
 - Background pattern image: https://www.toptal.com/designers/subtlepatterns/webb-pattern/
 
+- Javascript logo: https://icons8.com/icon/106036/javascript-logo
+
 ## Installation
     - Right click the webpage and select inspect to open developer tools.
     - Click the links to navigate the webpage.
@@ -59,4 +61,5 @@ A portfolio webpage that showcases my skills as a Full Stack web developer.
     - Toptal: Background pattern image
     - Visual Studio Code: https://code.visualstudio.com/
     - Paint: Used to make wireframe
+    - Icons8: Javascript logo source
 
