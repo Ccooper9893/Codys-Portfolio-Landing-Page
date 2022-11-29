@@ -96,43 +96,36 @@ main p span {
     font-weight: bolder;
 }
 
+
 /* ----------------My Work---------------- */
 
-.project1 a {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 5%;
+.project {
+    margin-top: 2rem;
 }
 
-.hori {
-    width: 50%;
-    border: 0.25vw solid var(--primary-color01);
-    margin-bottom: 4%;
-    opacity: 1;
-}
-
-.project234 a {
+.project a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    
 }
 
 .lightbulb {
-    width: 23%;
-    margin-bottom: 4%;
+    width: 50%;
     border: 0.25vw solid var(--primary-color01);
     opacity: 1;
+    border-radius: 1rem;
+    transition: 1s;
 }
 
 section a img:hover {
-    opacity: 0.7;
+    width: 75%;
 }
 
 /* Project title overlays */
 
-a[data-p1], a[data-p234] {
+/* a[data-p1], a[data-p234] {
     position: relative;
 }
 
@@ -146,13 +139,13 @@ a[data-p1]::before, a[data-p234]::before {
     bottom: 95%;
     font-weight: bold;
     padding: 0.2vw 10vw 0.2vw 10vw;
-    border: 0.25vw solid var(--primary-color01);
+    border: 0.1rem solid var(--primary-color01);
 }
 
 a[data-p234]::before {
     content: attr(data-p234);
     padding: 0.1vw 5vw 0.1vw 5vw;
-}
+} */
 
 /*---------------- Footer(Contact Information) ---------------- */
 
