@@ -112,15 +112,15 @@ main p span {
 }
 
 .lightbulb {
-    width: 50%;
+    width: 40%;
     border: 0.25vw solid var(--primary-color01);
     opacity: 1;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     transition: 1s;
 }
 
 section a img:hover {
-    width: 75%;
+    width: 50%;
 }
 
 /* Project title overlays */
@@ -153,6 +153,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 3rem;
     background-color: var(--primary-color01);
 }
 
